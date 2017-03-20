@@ -32,7 +32,7 @@ public class ServeurCommunication extends Thread{
         }
 
         @Override
-        public void start(){
+        public void run(){
             BufferedReader in = null;
 
             try {
@@ -66,6 +66,7 @@ public class ServeurCommunication extends Thread{
                     System.out.println(request);
                 } catch (IOException var15) {
                     System.out.println("request null");
+                    this.close();
                 }
                 switch (etat) {
                     case FERME:
@@ -161,6 +162,15 @@ public class ServeurCommunication extends Thread{
                 e.printStackTrace();
             }
         }
+
+    private void close() {
+        try {
+            this.conn_cli.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        System.out.println("connection close on error");
+    }
 
     private void getUserInfo(String user) {
         System.out.println("user info "+user);

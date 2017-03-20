@@ -10,7 +10,7 @@ import java.net.Socket;
 /**
  * Created by p1307887 on 06/03/2017.
  */
-public class ServeurConnexion {
+public class ServeurConnexion extends Thread {
 
     private int portServeur = 110;
     private InetAddress addr;
@@ -33,9 +33,10 @@ public class ServeurConnexion {
                 System.out.println("connection timed out");
             }
 
+            /*ServeurCommunication com = new ServeurCommunication(conn_cli, this.ID++);
+            com.start();*/
+            (new Thread(new ServeurCommunication(conn_cli, this.ID++))).start();
 
-            ServeurCommunication com = new ServeurCommunication(conn_cli, this.ID++);
-            com.start();
         }
     }
 }
