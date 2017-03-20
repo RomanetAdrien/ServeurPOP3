@@ -2,7 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="af61c598-9543-4747-8def-81ce5e26a44a" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Client/ClientPOP3.java" afterPath="$PROJECT_DIR$/src/Client/ClientPOP3.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ServeurPOP3/Client/ClientConnexion.class" afterPath="$PROJECT_DIR$/out/production/ServeurPOP3/Client/ClientConnexion.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ServeurPOP3/Serveur/ServeurCommunication$1.class" afterPath="$PROJECT_DIR$/out/production/ServeurPOP3/Serveur/ServeurCommunication$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ServeurPOP3/Serveur/ServeurCommunication.class" afterPath="$PROJECT_DIR$/out/production/ServeurPOP3/Serveur/ServeurCommunication.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ServeurPOP3/Serveur/ServeurConnexion.class" afterPath="$PROJECT_DIR$/out/production/ServeurPOP3/Serveur/ServeurConnexion.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Client/ClientConnexion.java" afterPath="$PROJECT_DIR$/src/Client/ClientConnexion.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Serveur/ServeurCommunication.java" afterPath="$PROJECT_DIR$/src/Serveur/ServeurCommunication.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -24,7 +29,9 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="2046">
               <caret line="95" column="26" lean-forward="false" selection-start-line="95" selection-start-column="26" selection-end-line="95" selection-end-column="26" />
-              <folding />
+              <folding>
+                <element signature="imports" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -32,8 +39,8 @@
       <file leaf-file-name="ClientPOP3.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Client/ClientPOP3.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="15" column="70" lean-forward="false" selection-start-line="15" selection-start-column="70" selection-end-line="15" selection-end-column="70" />
+            <state relative-caret-position="311">
+              <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -44,8 +51,8 @@
       <file leaf-file-name="ClientConnexion.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Client/ClientConnexion.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1012">
-              <caret line="61" column="38" lean-forward="false" selection-start-line="61" selection-start-column="38" selection-end-line="61" selection-end-column="38" />
+            <state relative-caret-position="377">
+              <caret line="76" column="24" lean-forward="false" selection-start-line="76" selection-start-column="24" selection-end-line="76" selection-end-column="24" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -56,8 +63,18 @@
       <file leaf-file-name="ServeurCommunication.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Serveur/ServeurCommunication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="113">
-              <caret line="58" column="36" lean-forward="true" selection-start-line="58" selection-start-column="36" selection-end-line="58" selection-end-column="36" />
+            <state relative-caret-position="123">
+              <caret line="147" column="33" lean-forward="false" selection-start-line="147" selection-start-column="33" selection-end-line="147" selection-end-column="33" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="rom.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Message/rom.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -68,7 +85,12 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="264">
               <caret line="12" column="30" lean-forward="false" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
-              <folding />
+              <folding>
+                <element signature="e#313#314#0" expanded="false" />
+                <element signature="e#345#346#0" expanded="false" />
+                <element signature="e#382#383#0" expanded="false" />
+                <element signature="e#415#416#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -76,8 +98,8 @@
       <file leaf-file-name="ServeurConnexion.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Serveur/ServeurConnexion.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+            <state relative-caret-position="355">
+              <caret line="35" column="14" lean-forward="false" selection-start-line="35" selection-start-column="12" selection-end-line="36" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -86,7 +108,7 @@
       <file leaf-file-name="ServeurPOP3.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Serveur/ServeurPOP3.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
+            <state relative-caret-position="22">
               <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
               <folding />
             </state>
@@ -98,7 +120,12 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="110">
               <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-              <folding />
+              <folding>
+                <element signature="e#266#267#0" expanded="false" />
+                <element signature="e#293#294#0" expanded="false" />
+                <element signature="e#324#325#0" expanded="false" />
+                <element signature="e#351#352#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -108,6 +135,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>new Message</find>
+      <find>null</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -122,8 +150,9 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/Serveur/Util.java" />
-        <option value="$PROJECT_DIR$/src/Client/ClientConnexion.java" />
         <option value="$PROJECT_DIR$/src/Client/ClientPOP3.java" />
+        <option value="$PROJECT_DIR$/src/Serveur/ServeurConnexion.java" />
+        <option value="$PROJECT_DIR$/src/Client/ClientConnexion.java" />
         <option value="$PROJECT_DIR$/src/Serveur/ServeurCommunication.java" />
       </list>
     </option>
@@ -200,6 +229,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ServeurPOP3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ServeurPOP3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Message" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -673,16 +716,24 @@
       <updated>1489933850944</updated>
       <workItem from="1489933852424" duration="5505000" />
       <workItem from="1489993267736" duration="3851000" />
-      <workItem from="1490001307649" duration="1254000" />
+      <workItem from="1490001307649" duration="6128000" />
     </task>
+    <task id="LOCAL-00001" summary="chaque nouvelle communication crée un new Thread pour pouvoir gerer plusieurs connections en meme temps">
+      <created>1490004702748</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1490004702748</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10610000" />
+    <option name="totallyTimeSpent" value="15484000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1098" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -693,7 +744,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33402705" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33402705" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -721,6 +772,10 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="chaque nouvelle communication crée un new Thread pour pouvoir gerer plusieurs connections en meme temps" />
+    <option name="LAST_COMMIT_MESSAGE" value="chaque nouvelle communication crée un new Thread pour pouvoir gerer plusieurs connections en meme temps" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
@@ -734,7 +789,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2046">
           <caret line="95" column="26" lean-forward="false" selection-start-line="95" selection-start-column="26" selection-end-line="95" selection-end-column="26" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -770,7 +827,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
           <caret line="12" column="30" lean-forward="false" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
-          <folding />
+          <folding>
+            <element signature="e#313#314#0" expanded="false" />
+            <element signature="e#345#346#0" expanded="false" />
+            <element signature="e#382#383#0" expanded="false" />
+            <element signature="e#415#416#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -794,7 +856,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="110">
           <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding />
+          <folding>
+            <element signature="e#266#267#0" expanded="false" />
+            <element signature="e#293#294#0" expanded="false" />
+            <element signature="e#324#325#0" expanded="false" />
+            <element signature="e#351#352#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -802,7 +869,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -818,7 +887,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="396">
           <caret line="12" column="30" lean-forward="true" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
-          <folding />
+          <folding>
+            <element signature="e#313#314#0" expanded="false" />
+            <element signature="e#345#346#0" expanded="false" />
+            <element signature="e#382#383#0" expanded="false" />
+            <element signature="e#415#416#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -842,7 +916,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding />
+          <folding>
+            <element signature="e#266#267#0" expanded="false" />
+            <element signature="e#293#294#0" expanded="false" />
+            <element signature="e#324#325#0" expanded="false" />
+            <element signature="e#351#352#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -850,7 +929,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
           <caret line="12" column="30" lean-forward="false" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
-          <folding />
+          <folding>
+            <element signature="e#313#314#0" expanded="false" />
+            <element signature="e#345#346#0" expanded="false" />
+            <element signature="e#382#383#0" expanded="false" />
+            <element signature="e#415#416#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -858,7 +942,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="110">
           <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding />
+          <folding>
+            <element signature="e#266#267#0" expanded="false" />
+            <element signature="e#293#294#0" expanded="false" />
+            <element signature="e#324#325#0" expanded="false" />
+            <element signature="e#351#352#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -866,50 +955,60 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2046">
           <caret line="95" column="26" lean-forward="false" selection-start-line="95" selection-start-column="26" selection-end-line="95" selection-end-column="26" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Serveur/ServeurPOP3.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
+        <state relative-caret-position="22">
           <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Serveur/ServeurConnexion.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Client/ClientPOP3.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="15" column="70" lean-forward="false" selection-start-line="15" selection-start-column="70" selection-end-line="15" selection-end-column="70" />
+        <state relative-caret-position="311">
+          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Serveur/ServeurConnexion.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="355">
+          <caret line="35" column="14" lean-forward="false" selection-start-line="35" selection-start-column="12" selection-end-line="36" selection-end-column="26" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Client/ClientConnexion.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1012">
-          <caret line="61" column="38" lean-forward="false" selection-start-line="61" selection-start-column="38" selection-end-line="61" selection-end-column="38" />
+        <state relative-caret-position="377">
+          <caret line="76" column="24" lean-forward="false" selection-start-line="76" selection-start-column="24" selection-end-line="76" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Message/rom.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Serveur/ServeurCommunication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="113">
-          <caret line="58" column="36" lean-forward="true" selection-start-line="58" selection-start-column="36" selection-end-line="58" selection-end-column="36" />
+        <state relative-caret-position="123">
+          <caret line="147" column="33" lean-forward="false" selection-start-line="147" selection-start-column="33" selection-end-line="147" selection-end-column="33" />
           <folding />
         </state>
       </provider>

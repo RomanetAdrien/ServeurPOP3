@@ -63,10 +63,9 @@ public class ServeurCommunication extends Thread{
             while(connexion) {
                 try {
                     request = in.readLine();
-                    System.out.println(request);
+                    System.out.println("request : " +request);
                 } catch (IOException var15) {
                     System.out.println("request null");
-                    this.close();
                 }
                 switch (etat) {
                     case FERME:
@@ -136,8 +135,6 @@ public class ServeurCommunication extends Thread{
                                         }
                                     }
                                 }
-
-
                             }
                             else{
                                 try {
@@ -145,6 +142,13 @@ public class ServeurCommunication extends Thread{
                                 } catch (IOException e) {
                                     e.printStackTrace();
                                 }
+                            }
+                        }else{
+                            System.out.println("command " + request + " does not exist");
+                            try {
+                                out.write(("command " + request + " does not exist").getBytes());
+                            } catch (IOException e) {
+                                e.printStackTrace();
                             }
 
                         }
@@ -192,6 +196,7 @@ public class ServeurCommunication extends Thread{
 
     private void miseajour() {
         this.connexion=false;
+        System.out.println("mise a jour");
     }
 }
 

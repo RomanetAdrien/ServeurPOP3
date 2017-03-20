@@ -29,8 +29,10 @@ public class ClientConnexion {
         String answer = null;
         answer = in.readLine();
 
-        if(!answer.equals("+OK Server ready")){
+        if(!answer.contains("+OK POP3 Server ready")){
             System.out.println("Could not connect to Server");
+            System.out.println(answer);
+
             return;
         }
 
@@ -39,7 +41,7 @@ public class ClientConnexion {
             OutputStream out = socket.getOutputStream();
             Scanner userinput = new Scanner(System.in);
             System.out.print("Identify yourself for the server :");
-            String identification = userinput.next();
+            String identification = userinput.nextLine();
             System.out.print(identification);
 
             message = "APOP " + identification +"\r\n";
@@ -49,21 +51,30 @@ public class ClientConnexion {
             System.out.println(message);
 
         }while (!message.startsWith("+OK"));
-
+        String command ="";
         do {
             OutputStream out = socket.getOutputStream();
             Scanner userinput = new Scanner(System.in);
             System.out.print("Write a command for the server :");
-            String command = userinput.next();
+            command = userinput.nextLine();
             System.out.print(command);
 
-            message = "";
+            message = command + "\r\n";
             out.write(message.getBytes());
-            InputStream input = socket.getInputStream();
-            message = listen(input);
-            System.out.println(message);
+            if(command.contains("RETR")){
+                do{
+                    InputStream input = socket.getInputStream();
+                    message = listen(input);
+                    System.out.println(message);
+                }while(!message.equals("."));
+            }else{
+                InputStream input = socket.getInputStream();
+                message = listen(input);
+                System.out.println(message);
+            }
 
-        }while (!message.equals("QUIT"));
+
+        }while (!command.contains("QUIT"));
 
 
 
