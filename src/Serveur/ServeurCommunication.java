@@ -53,9 +53,11 @@ public class ServeurCommunication extends Thread{
 
 
             try {
-                out.write("+OK POP3 serveur ready\r\n".getBytes());
+                out.write("+OK POP3 Server ready\r\n".getBytes());
+                System.out.println("+OK POP3 serveur ready");
             } catch (IOException e) {
                 e.printStackTrace();
+                System.out.println("error connection");
             }
 
             while(connexion) {
