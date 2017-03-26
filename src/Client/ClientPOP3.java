@@ -13,7 +13,7 @@ public class ClientPOP3{
 
     public static void main(String[] args) throws IOException {
 
-        ClientConnexion connexion = new ClientConnexion("10.42.136.138");
+        ClientConnexion connexion = new ClientConnexion("127.0.0.1");
 
     }
 

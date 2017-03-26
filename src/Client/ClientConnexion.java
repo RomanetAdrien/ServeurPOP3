@@ -61,12 +61,21 @@ public class ClientConnexion {
 
             message = command + "\r\n";
             out.write(message.getBytes());
+
+
             if(command.contains("RETR")){
-                do{
+                if(command.length()>=5){
+                    do{
+                        InputStream input = socket.getInputStream();
+                        message = listen(input);
+                        System.out.println(message);
+                    }while(!message.equals("."));
+                }
+                else {
                     InputStream input = socket.getInputStream();
                     message = listen(input);
                     System.out.println(message);
-                }while(!message.equals("."));
+                }
             }else{
                 InputStream input = socket.getInputStream();
                 message = listen(input);

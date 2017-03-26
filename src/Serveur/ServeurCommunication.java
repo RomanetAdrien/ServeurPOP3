@@ -85,17 +85,39 @@ public class ServeurCommunication extends Thread{
                             }
 
                         }else if (request.contains("APOP")){
-                            System.out.println(request.substring(request.indexOf(" "),request.lastIndexOf(" ")));
-                            System.out.println(request.substring(request.lastIndexOf(" ")));
-                            this.user = request.substring(request.indexOf(" ")+1,request.lastIndexOf(" "));
-                            this.pass = request.substring(request.indexOf(" "));
-                            getUserInfo(user);
-                            try {
-                                out.write(("+OK " +messageNb+" "+messageSize + "\r\n").getBytes());
-                            } catch (IOException e) {
-                                e.printStackTrace();
+                            if(request.substring(6).contains(" ")){
+                                System.out.println(request.substring(request.indexOf(" "),request.lastIndexOf(" ")));
+                                System.out.println(request.substring(request.lastIndexOf(" ")));
+                                this.user = request.substring(request.indexOf(" ")+1,request.lastIndexOf(" "));
+                                this.pass = request.substring(request.indexOf(" "));
+                                getUserInfo(user);
+                                try {
+                                    out.write(("+OK " +messageNb+" "+messageSize + "\r\n").getBytes());
+                                } catch (IOException e) {
+                                    e.printStackTrace();
+                                }
+                                etat = etatPossible.TRANSACTION;
                             }
-                            etat = etatPossible.TRANSACTION;
+                            else{
+                                if(getUserInfo(request.substring(5))){
+                                    System.out.println(request);
+                                    this.user = request;
+                                    try {
+                                        out.write(("+OK " +messageNb+" "+messageSize + "\r\n").getBytes());
+                                    } catch (IOException e) {
+                                        e.printStackTrace();
+                                    }
+                                    etat = etatPossible.TRANSACTION;
+                                }
+                                else {
+                                    try {
+                                        out.write(("USER DOES NOT EXIST "+ "\r\n").getBytes());
+                                    } catch (IOException e) {
+                                        e.printStackTrace();
+                                    }
+                                }
+                            }
+
                         }
                         break;
                     case AUTHENTIFICATION:
@@ -122,7 +144,7 @@ public class ServeurCommunication extends Thread{
                         }else if(request.contains("QUIT")){
                             miseajour();
                             etat=etatPossible.FERME;
-                        }else if(request.contains("RETR")){
+                        }else if(request.contains("RETR")&&request.length()>=5){
                             if(idList.contains(Integer.parseInt(request.substring(5)))){
                                 System.out.println(request.substring(5));
                                 for (int i=0;i<idList.size();i++
@@ -138,7 +160,7 @@ public class ServeurCommunication extends Thread{
                             }
                             else{
                                 try {
-                                    out.write(("ERROR MESSAGE NOT REAL").getBytes());
+                                    out.write(("ERROR MESSAGE NOT REAL"+"\r\n").getBytes());
                                 } catch (IOException e) {
                                     e.printStackTrace();
                                 }
@@ -146,7 +168,7 @@ public class ServeurCommunication extends Thread{
                         }else{
                             System.out.println("command " + request + " does not exist");
                             try {
-                                out.write(("command " + request + " does not exist").getBytes());
+                                out.write(("command " + request + " does not exist"+"\r\n").getBytes());
                             } catch (IOException e) {
                                 e.printStackTrace();
                             }
@@ -176,7 +198,11 @@ public class ServeurCommunication extends Thread{
         System.out.println("connection close on error");
     }
 
-    private void getUserInfo(String user) {
+    private boolean getUserInfo(String user) {
+        File f = new File("Message/"+user+".txt");
+        if(!(f.exists() && !f.isDirectory())) {
+            return false;
+        }
         System.out.println("user info "+user);
 
         this.messageNb=Util.countMessage("Message/"+user+".txt");
@@ -191,6 +217,7 @@ public class ServeurCommunication extends Thread{
             messageList.add(new Message(Integer.parseInt(list.get(i).substring(list.get(i).indexOf("Message-ID: ")+13,  list.get(i).lastIndexOf(">"))),list.get(i)));
             idList.add(Integer.parseInt(list.get(i).substring(list.get(i).indexOf("Message-ID: ")+13,  list.get(i).lastIndexOf(">"))));
         }
+        return true;
     }
 
 
