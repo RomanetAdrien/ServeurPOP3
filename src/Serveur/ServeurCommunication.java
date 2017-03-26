@@ -145,7 +145,7 @@ public class ServeurCommunication extends Thread{
                             miseajour();
                             etat=etatPossible.FERME;
                         }else if(request.contains("RETR")&&request.length()>=5){
-                            if(idList.contains(Integer.parseInt(request.substring(5)))){
+                            if(request.substring(5).matches("[0-9]+") && idList.contains(Integer.parseInt(request.substring(5)))){
                                 System.out.println(request.substring(5));
                                 for (int i=0;i<idList.size();i++
                                      ) {

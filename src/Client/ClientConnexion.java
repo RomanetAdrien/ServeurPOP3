@@ -40,9 +40,9 @@ public class ClientConnexion {
         do {
             OutputStream out = socket.getOutputStream();
             Scanner userinput = new Scanner(System.in);
-            System.out.print("Identify yourself for the server :");
+            System.out.println("Identify yourself for the server :");
             String identification = userinput.nextLine();
-            System.out.print(identification);
+            System.out.println(identification);
 
             message = "APOP " + identification +"\r\n";
             out.write(message.getBytes());
@@ -57,7 +57,7 @@ public class ClientConnexion {
             Scanner userinput = new Scanner(System.in);
             System.out.print("Write a command for the server :");
             command = userinput.nextLine();
-            System.out.print(command);
+            System.out.println(command);
 
             message = command + "\r\n";
             out.write(message.getBytes());
